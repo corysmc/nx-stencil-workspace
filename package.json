@@ -62,6 +62,7 @@
     "@nxtend/capacitor": "^11.1.1",
     "@nxtend/ionic-react": "^11.0.3",
     "@stencil/core": "^2.5.2",
+    "@stencil/react-output-target": "^0.0.9",
     "@stencil/sass": "1.4.1",
     "@testing-library/react": "11.2.6",
     "@types/jest": "26.0.8",

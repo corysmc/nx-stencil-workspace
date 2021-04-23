@@ -441,6 +441,31 @@
           "storybook": false
         }
       }
+    },
+    "core-react": {
+      "root": "libs/core-react",
+      "sourceRoot": "libs/core-react/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/core-react/**/*.{ts,tsx,js,jsx}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/libs/core-react"
+          ],
+          "options": {
+            "jestConfig": "libs/core-react/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
     }
   }
 }

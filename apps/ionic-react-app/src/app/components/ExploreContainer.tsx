@@ -1,4 +1,6 @@
 import React from 'react';
+import { MyComponent } from '@my-org/core-react';
+
 import './ExploreContainer.css';
 
 interface ContainerProps {
@@ -19,6 +21,7 @@ const ExploreContainer: React.FC<ContainerProps> = ({ name }) => {
         >
           UI Components
         </a>
+        <MyComponent first="Cory" middle="Steven" last="M" />
       </p>
     </div>
   );

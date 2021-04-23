@@ -1,5 +1,6 @@
 import { Config } from '@stencil/core';
 import { sass } from '@stencil/sass';
+import { reactOutputTarget } from '@stencil/react-output-target';
 
 export const config: Config = {
   namespace: 'core',
@@ -11,5 +12,9 @@ export const config: Config = {
       esmLoaderPath: '../loader',
       dir: '../../dist/libs/core/dist',
     },
+    reactOutputTarget({
+      componentCorePackage: '@my-org/core',
+      proxiesFile: '../../../libs/core-react/src/index.ts',
+    }),
   ],
 };
