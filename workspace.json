@@ -321,6 +321,73 @@
           }
         }
       }
+    },
+    "ionic-stencil-pwa": {
+      "root": "apps/ionic-stencil-pwa",
+      "sourceRoot": "apps/ionic-stencil-pwa/src",
+      "projectType": "application",
+      "generators": {
+        "@nxext/stencil:component": {
+          "style": "scss",
+          "storybook": false
+        }
+      },
+      "targets": {
+        "build": {
+          "executor": "@nxext/stencil:build",
+          "options": {
+            "projectType": "application",
+            "outputs": [
+              "{options.outputPath}"
+            ],
+            "configPath": "apps/ionic-stencil-pwa/stencil.config.ts",
+            "outputPath": "dist/apps/ionic-stencil-pwa"
+          },
+          "outputs": [
+            "{options.outputPath}"
+          ],
+          "configurations": {
+            "production": {
+              "dev": false
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nxext/stencil:build",
+          "options": {
+            "projectType": "application",
+            "outputs": [
+              "{options.outputPath}"
+            ],
+            "configPath": "apps/ionic-stencil-pwa/stencil.config.ts",
+            "outputPath": "dist/apps/ionic-stencil-pwa",
+            "serve": true,
+            "watch": true
+          }
+        },
+        "test": {
+          "executor": "@nxext/stencil:test",
+          "options": {
+            "projectType": "application",
+            "outputs": [
+              "{options.outputPath}"
+            ],
+            "configPath": "apps/ionic-stencil-pwa/stencil.config.ts",
+            "outputPath": "dist/apps/ionic-stencil-pwa"
+          }
+        },
+        "e2e": {
+          "executor": "@nxext/stencil:e2e",
+          "options": {
+            "projectType": "application",
+            "outputs": [
+              "{options.outputPath}"
+            ],
+            "configPath": "apps/ionic-stencil-pwa/stencil.config.ts",
+            "outputPath": "dist/apps/ionic-stencil-pwa"
+          }
+        }
+      }
     }
   }
 }

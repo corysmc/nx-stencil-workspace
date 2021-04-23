@@ -1,6 +1,0 @@
-{
-  "name": "ionic-react-app",
-  "devDependencies": {
-    "@capacitor/cli": "^2.4.5"
-  }
-}
