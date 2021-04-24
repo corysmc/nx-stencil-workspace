@@ -16,6 +16,7 @@
     "baseUrl": ".",
     "paths": {
       "@my-org/core": ["dist/libs/core"],
+      "@my-org/core/loader": ["dist/libs/core/loader"],
       "@my-org/core-react": ["libs/core-react/src/index.ts"]
     }
   },

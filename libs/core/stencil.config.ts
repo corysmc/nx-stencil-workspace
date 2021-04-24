@@ -15,6 +15,7 @@ export const config: Config = {
     reactOutputTarget({
       componentCorePackage: '@my-org/core',
       proxiesFile: '../../../libs/core-react/src/index.ts',
+      includeDefineCustomElements: true,
     }),
   ],
 };
