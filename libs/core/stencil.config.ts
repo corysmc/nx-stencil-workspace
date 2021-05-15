@@ -15,7 +15,8 @@ export const config: Config = {
     reactOutputTarget({
       componentCorePackage: '@my-org/core',
       proxiesFile: '../../../libs/core-react/src/index.ts',
-      includeDefineCustomElements: true,
+      includeDefineCustomElements: false,
+      // @todo includeDefineCustomElements should be true, once this is solved: https://github.com/nxext/nx-extensions/issues/235
     }),
   ],
 };
