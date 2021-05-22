@@ -34,7 +34,7 @@ export class MyComponent {
   render() {
     return (
       <div>
-        <div>Hey, World Jojo! I'm {this.getText()}</div>
+        <div>Hello World! I'm {this.getText()}</div>
         Toggle: {`${this.toggle}`}
       </div>
     );

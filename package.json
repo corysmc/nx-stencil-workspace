@@ -90,6 +90,7 @@
     "eslint-plugin-react-hooks": "4.2.0",
     "jest": "26.2.2",
     "jest-cli": "^26.6.3",
+    "lit-html": "^1.4.1",
     "prettier": "2.2.1",
     "puppeteer": "~5.3.1",
     "ts-jest": "26.4.0",

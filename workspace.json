@@ -444,6 +444,17 @@
             }
           }
         },
+        "serve-storybook": {
+          "executor": "@nrwl/workspace:run-commands",
+          "options": {
+            "commands": [
+              "nx run core:serve",
+              "nx run core:storybook"
+            ],
+            "parallel": true,
+            "verbose": true
+          }
+        },
         "build-storybook": {
           "executor": "@nrwl/storybook:build",
           "options": {
