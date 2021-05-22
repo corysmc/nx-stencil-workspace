@@ -10,23 +10,33 @@ export class MyComponent {
   /**
    * The first name
    */
-  @Prop() first: string;
+  @Prop() first!: 'Jon' | 'John' | 'Jonathan';
 
   /**
    * The middle name
    */
-  @Prop() middle: string;
+  @Prop() middle!: string;
 
   /**
    * The last name
    */
   @Prop() last: string;
 
+  /**
+   * Toggle option
+   */
+  @Prop() toggle: boolean;
+
   private getText(): string {
     return format(this.first, this.middle, this.last);
   }
 
   render() {
-    return <div>Hey there, World! I'm {this.getText()}</div>;
+    return (
+      <div>
+        <div>Hey, World Jojo! I'm {this.getText()}</div>
+        Toggle: {`${this.toggle}`}
+      </div>
+    );
   }
 }

@@ -433,12 +433,32 @@
             "configPath": "libs/core/stencil.config.ts",
             "outputPath": "dist/libs/core"
           }
+        },
+        "storybook": {
+          "executor": "@nrwl/storybook:storybook",
+          "options": {
+            "uiFramework": "@storybook/web-components",
+            "port": 4400,
+            "config": {
+              "configFolder": "libs/core/.storybook"
+            }
+          }
+        },
+        "build-storybook": {
+          "executor": "@nrwl/storybook:build",
+          "options": {
+            "uiFramework": "@storybook/web-components",
+            "outputPath": "dist/storybook/core",
+            "config": {
+              "configFolder": "libs/core/.storybook"
+            }
+          }
         }
       },
       "generators": {
         "@nxext/stencil:component": {
           "style": "scss",
-          "storybook": false
+          "storybook": true
         }
       }
     },
